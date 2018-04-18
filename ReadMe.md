@@ -5,6 +5,7 @@ Project Overview
 	Take a baseline installation of the AWS Lightsail Ubuntu server and configure it to host a Python – PostgresSQL web application.
 
 		URL:   http://34.212.27.187.xip.io
+		Using Port: 2200
 		
 1.	Install a new Ubuntu Linus Server from AWS Lightsail
 2.	Update all installed packages
