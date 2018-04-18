@@ -6,6 +6,9 @@ Project Overview
 
 		URL:   http://34.212.27.187.xip.io
 		Using Port: 2200
+		Dependencies include:
+			Python 2.7, sqlalchemy,Flask, PostgreSQL, python-requests, Google OAuth2
+
 		
 1.	Install a new Ubuntu Linus Server from AWS Lightsail
 2.	Update all installed packages
@@ -69,8 +72,10 @@ a) generate the Key Pair locally
        </VirtualHost>
 
 
- Install Postgresql
-     - sudo ap-get install petgresql
+ Install Apache, Postgresql and other
+      - sudo apt-get install apache2
+      - sudo apt-get install libapache2-mod-wsgi
+      - sudo ap-get install petgresql
       - check the remote connections
           sudo nano /etc/postgresql/9.5/main/pg_hba.conf
           
@@ -86,6 +91,11 @@ a) generate the Key Pair locally
               # IPv6 local connections:
               host    all             all             ::1/128                 md5
 
+          - sudo apt-get install python-sqlalchemy
+          - sudo apt-get install python-requests
+          - sudo apt-get install python-oauth2client
+          - sudo apt-get install python-psycopg2
+          - sudo apt-get install python-flask
           - sudo service postgresql restart
 
 8.	Create the .wsgi file in /var/www/html
